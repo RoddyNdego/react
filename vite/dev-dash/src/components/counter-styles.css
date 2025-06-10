@@ -1,17 +1,29 @@
+/* border is used like this as a short-hand syntax for styling the border-width, border-style and border color. See W3 schools for more info */
+
+/* To chanege the color of an item, you need to set the background-color, otherwise use the color property to style text color */
 .btn_1 {
-    border: solid;
+    border: 1px solid gray;
+    background-color: lightgreen;
     border-spacing: 5px;
     padding: 10px 10px 10px 10px;
     margin-left: 10px;
 }
+/* If you want to explicitly style the border, i.e make it solid(visible), dashed or none(invisible) You need to specify the correct CSS property */
 .btn_2 {
-    border: solid;
+    border-style: solid;
+    border-width: 1px;
+    background-color: red;
     border-spacing: 5px;
     padding: 10px 10px 10px 10px;
     margin-left: 10px;
 }
+
+/* Homework */
+/* Fix the below styles by using the correct CSS properties */
+
 .btn_3 {
     border: solid;
+    background-color: yellow;
     border-spacing: 5px;
     padding: 10px 10px 10px 10px;
     margin-left: 10px;
