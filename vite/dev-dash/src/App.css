@@ -46,3 +46,12 @@
 .todo-item {
   border: 1cap;
 }
+
+a {
+  color: blueviolet;
+}
+
+h1 {
+  font-size: 30px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}

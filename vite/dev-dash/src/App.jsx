@@ -1,30 +1,21 @@
-
-import Counter from "./components/Counter"
-// import { useState } from "react"
 import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from "./pages/Home.jsx"
+import Nav from "./components/Nav.jsx"
+import DevTeam from './pages/DevTeam.jsx';
 
 function App() {
+  return(
+    <Router>
+      <Nav/>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/devteam/:username" element={<DevTeam/>}/>
+      </Routes>
+    
+    </Router>
+  )
 
-  return <Counter/>
-
-  // const [popupOpen, setPopupOpen] = useState(false)
-
-  // return (
-  //   <>
-  //     <Title todo_title="To-do list" />
-  //       <div>
-  //         <input type="text" onChange={(event) =>{
-  //           console.log(event.target.value)
-  //         }}/>
-  //         <button onClick={() => setPopupOpen(true)}>Add to do</button>
-  //       </div>
-  //     <Todo task="Get ready for tomorrow"/>
-  //     <Todo task="Go to bed early"/>
-  //     <Todo task="Wake up early"/>
-  //     <Todo task="Go to work"/>
-  //     { popupOpen && <Popup alert="Are you reallyyy sure?"/>}
-  //   </>
-  // )
 }
 
 export default App
